@@ -19,8 +19,9 @@ Key columns in the dataset include:
 - **IS_SUCCESSFUL**: Target variable indicating whether the organization used the funding effectively.
 
 ## Objective
+
 The main objective of this project is to create a **Neural Network model** that can predict the target variable **IS_SUCCESSFUL** based on the other features available in the dataset. By doing this, the model can help Alphabet Soup make data-driven decisions when selecting applicants for funding in the future.
----
+
 
 ## Model Design and Approach
 
@@ -40,8 +41,6 @@ The main objective of this project is to create a **Neural Network model** that 
 3. **Splitting the Data**:
    - The dataset will be split into training and testing sets. The training set will be used to train the model, while the test set will be used to evaluate the final model's performance.
 
----
-
 ### **2. Neural Network Architecture**
 
 The neural network model consists of:
@@ -58,19 +57,19 @@ The neural network model consists of:
 ### **3. Model Training**
 The model is trained using the training data (`X_train_scaled` and `y_train`) for 100 epochs. 
 
-#### **4. Model Evaluation**
+### **4. Model Evaluation**
 After training, the model's performance is evaluated on the test set (`X_test_scaled` and `y_test`), and key metrics are generated:
 - **Confusion Matrix**: To show the number of true positives, false positives, true negatives, and false negatives.
 - **Accuracy**: The proportion of correctly predicted samples.
 - **AUC (Area Under the Curve)**: To evaluate the model's ability to discriminate between classes.
 
-#### **5. Results**
+### **5. Results**
 After training the model, the following metrics were observed:
 - **Train Metrics**: A confusion matrix, AUC score, and classification report for the training set.
 - **Test Metrics**: A confusion matrix, AUC score, and classification report for the test set.
 The results can help identify whether the model is able to distinguish between successful and unsuccessful applicants effectively.
 
-#### **9. Conclusion and Recommendations**
+### **6. Conclusion and Recommendations**
 - The neural network model achieved an accuracy of around 47%, but further optimization is needed.
 - Some steps for model improvement could include:
   1. **Hyperparameter Tuning**: Experimenting with different numbers of layers and neurons.
